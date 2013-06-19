@@ -1,0 +1,1 @@
+console.log('fr', {"hello":"Salut","world":"Monde"});
