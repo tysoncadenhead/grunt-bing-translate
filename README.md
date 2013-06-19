@@ -1,6 +1,6 @@
 # grunt-bing-translate
 
-#### Automatically translate from english to any other language with Bing.
+#### Automatically translate i18n files from english to any other language with Bing.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -39,17 +39,17 @@ grunt.initConfig({
 ##### clientId {String}
 This is your Bing Client ID that you got when you created a Bing API account.
 
-ie: myawesomename
+ie: `myawesomename`
 
 ##### clientSecret {String}
 This is the secret password that Bing gave you when you created a Bing API account.
 
-ie: 1a7EFzlm25z1nD0DRJ/91tweZn6cQH1m5IJXiInANzM
+ie: `1a7EFzlm25z1nD0DRJ/91tweZn6cQH1m5IJXiInANzM`
 
 ##### languages {Array}
 An array of languages to translate to. Any language that bing can translate can be used here.
 
-ie: ['fr', 'es', 'en']
+ie: `['fr', 'es', 'en']`
 
 ##### files {Object}
 An object containing all of the files to translate. The name of each item in the object is the root directory where we will throw all of our translated files.
@@ -81,7 +81,7 @@ There are a few additional options you can specify inside each of the files. The
 ###### template {String}
 This is an (EJS)[http://embeddedjs.com/] template to wrap render the files with. The template get two parameters: `language` which is the current language being translated and `values` which is an object with all of the the values translated.
 
-ie: "<%- values %>"
+ie: `"<%- values %>"`
 
 ###### values {Object}
 This is an object with all of the words that you want Bing to translate for you. The key will be consistent in all of your i18n files, but the values with be different depending on the language.
