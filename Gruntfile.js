@@ -32,6 +32,7 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     bing_translate: {
+      "options": {
         "clientId": require("./config.json").clientId, // Replace this with your Bing Translate Client ID
         "clientSecret": require("./config.json").clientSecret, // Replace this with your Bing Translate Client Secret
         "defaultLanguage": "en",
@@ -45,6 +46,7 @@ module.exports = function(grunt) {
                 }
             }
         }
+      }
     },
 
     // Unit tests.

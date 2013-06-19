@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     grunt.registerTask('bing_translate', 'Translates language files with Bing', function () {
 
       var done = this.async(), 
-          config = grunt.config.data.bing_translate,
+          config = grunt.config.data.bing_translate.options,
           MsTranslator = require('mstranslator'),
           ejs = require('ejs'),
           fs = require('fs'),

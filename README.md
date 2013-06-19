@@ -100,6 +100,38 @@ By default, we will end your filenames with `.js`, but if you want to put your f
 
 ie: `"fileNameEnding": "/translation.json"`
 
+## Full Example
+
+```js
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+
+    "bing_translate": {
+      "options": {
+        "clientId": require("./config.json").clientId, // Replace this with your Bing Translate Client ID
+        "clientSecret": require("./config.json").clientSecret, // Replace this with your Bing Translate Client Secret
+        "defaultLanguage": "en",
+        "languages": ["es", "fr"],
+        "files": {
+            "test/lang": {
+                "template": "console.log('<%- language %>', <%- values %>);",
+                "values": {
+                    "hello": "Hello",
+                    "world": "World"
+                }
+            }
+        }
+      }
+    }
+    }
+
+  });
+
+};
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
