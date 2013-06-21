@@ -77,7 +77,7 @@ module.exports = function (grunt) {
 
           // Write the file
           fs.writeFileSync(
-            String(__dirname).replace('tasks', '') + fileName + '/' + language + (file.fileNameEnding || '.js'), 
+            String(__dirname).replace('/node_modules/grunt-bing-translate', '').replace('tasks', '') + fileName + '/' + language + (file.fileNameEnding || '.js'), 
             template
           );
 

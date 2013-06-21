@@ -1,13 +1,9 @@
 {
   "name": "grunt-bing-translate",
   "description": "Automatically translate from english to any other language with Bing.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/tysoncadenhead/grunt-bing-translate",
-  "author": {
-    "name": "Tyson Cadenhead",
-    "email": "tysoncadenhead@gmail.com",
-    "url": "http://tysoncadenhead.com"
-  },
+  "author": "Tyson Cadenhead <tysoncadenhead@gmail.com> (http://tysoncadenhead.com)",
   "repository": {
     "type": "git",
     "url": "git://github.com/tysoncadenhead/grunt-bing-translate.git"
@@ -42,5 +38,20 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "readmeFilename": "README.md",
+  "gitHead": "07f88c44212e4c61e217eb373be468bca471027e",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ejs": "~0.8.4",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-jshint": "~0.1.1",
+    "mstranslator": "~0.1.5",
+    "underscore": "~1.4.4"
+  },
+  "license": "BSD"
 }
