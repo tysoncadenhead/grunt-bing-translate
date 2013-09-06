@@ -38,8 +38,8 @@ module.exports = function(grunt) {
         "defaultLanguage": "en",
         "languages": ["es", "fr"],
         "files": {
-            "test/lang": {
-                "template": "console.log('<%- language %>', <%- values %>);",
+            "temp": {
+                "template": "module.exports = { 'lang': '<%- language %>', 'words': <%- values %> };",
                 "values": {
                     "hello": "Hello",
                     "world": "World"

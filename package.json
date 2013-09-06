@@ -1,7 +1,7 @@
 {
   "name": "grunt-bing-translate",
   "description": "Automatically translate from english to any other language with Bing.",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "homepage": "https://github.com/tysoncadenhead/grunt-bing-translate",
   "author": "Tyson Cadenhead <tysoncadenhead@gmail.com> (http://tysoncadenhead.com)",
   "repository": {
