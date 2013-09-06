@@ -125,7 +125,7 @@ module.exports = function (grunt) {
           this.lang[language] = {};    
 
           client.translateArray({
-              from: 'en',
+              from: config.defaultLanguage || 'en',
               to: language,
               texts: this.wordsArr
             }, function (err, data) {

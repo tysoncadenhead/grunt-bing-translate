@@ -136,4 +136,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Road Map
 - Unit Tests
-- Translate from any language
+- ~~Translate from any language~~
